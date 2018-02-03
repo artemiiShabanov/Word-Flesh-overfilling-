@@ -1,0 +1,922 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3290D55B0AC3AC0B36FF8E57 /* Pods_WordFlash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28D4C52252BD884747FDD3C3 /* Pods_WordFlash.framework */; };
+		6DC181E176B3A556F44FC13C /* Pods_WordFlashTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C0E1FD8633069262A49A21A /* Pods_WordFlashTests.framework */; };
+		9C747EC8F12FE8A99BBD3FC6 /* Pods_WordFlashUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C7F67F736BA7D5051F4960 /* Pods_WordFlashUITests.framework */; };
+		A415FEDD2015EF8900983B38 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A415FEDC2015EF8900983B38 /* Functions.swift */; };
+		A42C5B931FD2BDA90063D265 /* WordTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42C5B921FD2BDA90063D265 /* WordTableViewController.swift */; };
+		A42C5B951FD2BE3A0063D265 /* WordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42C5B941FD2BE3A0063D265 /* WordModel.swift */; };
+		A42C5B971FD2BE490063D265 /* WordTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42C5B961FD2BE490063D265 /* WordTableCell.swift */; };
+		A42C5B991FD2C0B50063D265 /* FavoriteWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42C5B981FD2C0B50063D265 /* FavoriteWordViewController.swift */; };
+		A42C5B9B1FD2C95B0063D265 /* HistoryWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42C5B9A1FD2C95B0063D265 /* HistoryWordViewController.swift */; };
+		A42C5B9D1FD2CD9A0063D265 /* AddWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42C5B9C1FD2CD9A0063D265 /* AddWordViewController.swift */; };
+		A456B5B81FDAC44400421186 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A456B5B71FDAC44400421186 /* CardView.swift */; };
+		A45779AA20187CFC00AEC98A /* Structures.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45779A920187CFC00AEC98A /* Structures.swift */; };
+		A46FF8B41FF2BBDF009AB3F0 /* LogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46FF8B31FF2BBDF009AB3F0 /* LogoutViewController.swift */; };
+		A474E0491FF39DDE000205F6 /* UIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A474E0481FF39DDE000205F6 /* UIExtensions.swift */; };
+		A47FD3042014C9FB005C17F1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47FD3032014C9FB005C17F1 /* Constants.swift */; };
+		A4BD85471FE5C026002C0DAE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BD85461FE5C026002C0DAE /* LoginViewController.swift */; };
+		A4D32BF51FE90CC700CFC40B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D32BF41FE90CC700CFC40B /* RegisterViewController.swift */; };
+		A4DC2ECD1FDC174400317ED8 /* MutableCollections+Shuffle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DC2ECC1FDC174400317ED8 /* MutableCollections+Shuffle.swift */; };
+		AEB5E12B1FD81B8C00BCF21A /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEB5E12A1FD81B8C00BCF21A /* CardView.xib */; };
+		AEB765FA1FE9466C00BF91E1 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB765F91FE9466C00BF91E1 /* NetworkManager.swift */; };
+		AEDDDC8D1FEA94A300C692E7 /* NetworkUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDDDC8C1FEA94A300C692E7 /* NetworkUser.swift */; };
+		AEDDDC8F1FEA94BC00C692E7 /* NetworkDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDDDC8E1FEA94BC00C692E7 /* NetworkDelegate.swift */; };
+		FA023A0E1FDB1BE400FC7EDF /* dictionary.json in Resources */ = {isa = PBXBuildFile; fileRef = FA023A0D1FDB1BE400FC7EDF /* dictionary.json */; };
+		FA023A101FDB1BF500FC7EDF /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA023A0F1FDB1BF500FC7EDF /* Dictionary.swift */; };
+		FA312EFF1FCBF37200D55F06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA312EFE1FCBF37200D55F06 /* AppDelegate.swift */; };
+		FA312F011FCBF37200D55F06 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA312F001FCBF37200D55F06 /* MainViewController.swift */; };
+		FA312F041FCBF37200D55F06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA312F021FCBF37200D55F06 /* Main.storyboard */; };
+		FA312F061FCBF37200D55F06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA312F051FCBF37200D55F06 /* Assets.xcassets */; };
+		FA312F091FCBF37200D55F06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA312F071FCBF37200D55F06 /* LaunchScreen.storyboard */; };
+		FA312F141FCBF37200D55F06 /* WordFlashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA312F131FCBF37200D55F06 /* WordFlashTests.swift */; };
+		FA312F1F1FCBF37200D55F06 /* WordFlashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA312F1E1FCBF37200D55F06 /* WordFlashUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA312F101FCBF37200D55F06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA312EF31FCBF37100D55F06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA312EFA1FCBF37200D55F06;
+			remoteInfo = WordFlash;
+		};
+		FA312F1B1FCBF37200D55F06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA312EF31FCBF37100D55F06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA312EFA1FCBF37200D55F06;
+			remoteInfo = WordFlash;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		28D4C52252BD884747FDD3C3 /* Pods_WordFlash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WordFlash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EEAA96989E2180876C987D7 /* Pods-WordFlashTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordFlashTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WordFlashTests/Pods-WordFlashTests.debug.xcconfig"; sourceTree = "<group>"; };
+		75C7F67F736BA7D5051F4960 /* Pods_WordFlashUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WordFlashUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C0E1FD8633069262A49A21A /* Pods_WordFlashTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WordFlashTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F74B4CF15969D4F09E3915E /* Pods-WordFlash.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordFlash.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WordFlash/Pods-WordFlash.debug.xcconfig"; sourceTree = "<group>"; };
+		A415FEDC2015EF8900983B38 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+		A42C5B921FD2BDA90063D265 /* WordTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordTableViewController.swift; sourceTree = "<group>"; };
+		A42C5B941FD2BE3A0063D265 /* WordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordModel.swift; sourceTree = "<group>"; };
+		A42C5B961FD2BE490063D265 /* WordTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordTableCell.swift; sourceTree = "<group>"; };
+		A42C5B981FD2C0B50063D265 /* FavoriteWordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteWordViewController.swift; sourceTree = "<group>"; };
+		A42C5B9A1FD2C95B0063D265 /* HistoryWordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryWordViewController.swift; sourceTree = "<group>"; };
+		A42C5B9C1FD2CD9A0063D265 /* AddWordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWordViewController.swift; sourceTree = "<group>"; };
+		A456B5B71FDAC44400421186 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		A45779A920187CFC00AEC98A /* Structures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structures.swift; sourceTree = "<group>"; };
+		A46FF8B31FF2BBDF009AB3F0 /* LogoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutViewController.swift; sourceTree = "<group>"; };
+		A474E0481FF39DDE000205F6 /* UIExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtensions.swift; sourceTree = "<group>"; };
+		A47FD3032014C9FB005C17F1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A4BD85461FE5C026002C0DAE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A4D32BF41FE90CC700CFC40B /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		A4DC2ECC1FDC174400317ED8 /* MutableCollections+Shuffle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MutableCollections+Shuffle.swift"; sourceTree = "<group>"; };
+		AEB5E12A1FD81B8C00BCF21A /* CardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
+		AEB765F91FE9466C00BF91E1 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		AEDDDC8C1FEA94A300C692E7 /* NetworkUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUser.swift; sourceTree = "<group>"; };
+		AEDDDC8E1FEA94BC00C692E7 /* NetworkDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDelegate.swift; sourceTree = "<group>"; };
+		B9B64CC5220BF914D4D043C9 /* Pods-WordFlashUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordFlashUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WordFlashUITests/Pods-WordFlashUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C4990BCF66A46C2C5F7B5034 /* Pods-WordFlashUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordFlashUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WordFlashUITests/Pods-WordFlashUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E858FDFAA37703008D6F4B34 /* Pods-WordFlash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordFlash.release.xcconfig"; path = "Pods/Target Support Files/Pods-WordFlash/Pods-WordFlash.release.xcconfig"; sourceTree = "<group>"; };
+		FA023A0D1FDB1BE400FC7EDF /* dictionary.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dictionary.json; sourceTree = "<group>"; };
+		FA023A0F1FDB1BF500FC7EDF /* Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
+		FA312EFB1FCBF37200D55F06 /* WordFlash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordFlash.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA312EFE1FCBF37200D55F06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA312F001FCBF37200D55F06 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		FA312F031FCBF37200D55F06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA312F051FCBF37200D55F06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA312F081FCBF37200D55F06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA312F0A1FCBF37200D55F06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA312F0F1FCBF37200D55F06 /* WordFlashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordFlashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA312F131FCBF37200D55F06 /* WordFlashTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordFlashTests.swift; sourceTree = "<group>"; };
+		FA312F151FCBF37200D55F06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA312F1A1FCBF37200D55F06 /* WordFlashUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordFlashUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA312F1E1FCBF37200D55F06 /* WordFlashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordFlashUITests.swift; sourceTree = "<group>"; };
+		FA312F201FCBF37200D55F06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAA7F9985D9ECCA1E6F9D321 /* Pods-WordFlashTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordFlashTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WordFlashTests/Pods-WordFlashTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA312EF81FCBF37200D55F06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3290D55B0AC3AC0B36FF8E57 /* Pods_WordFlash.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA312F0C1FCBF37200D55F06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DC181E176B3A556F44FC13C /* Pods_WordFlashTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA312F171FCBF37200D55F06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C747EC8F12FE8A99BBD3FC6 /* Pods_WordFlashUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8C16F6243610198A2AA25BA5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9F74B4CF15969D4F09E3915E /* Pods-WordFlash.debug.xcconfig */,
+				E858FDFAA37703008D6F4B34 /* Pods-WordFlash.release.xcconfig */,
+				2EEAA96989E2180876C987D7 /* Pods-WordFlashTests.debug.xcconfig */,
+				FAA7F9985D9ECCA1E6F9D321 /* Pods-WordFlashTests.release.xcconfig */,
+				B9B64CC5220BF914D4D043C9 /* Pods-WordFlashUITests.debug.xcconfig */,
+				C4990BCF66A46C2C5F7B5034 /* Pods-WordFlashUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A415FED62015DC8B00983B38 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A456B5B71FDAC44400421186 /* CardView.swift */,
+				FA312F071FCBF37200D55F06 /* LaunchScreen.storyboard */,
+				FA312F021FCBF37200D55F06 /* Main.storyboard */,
+				AEB5E12A1FD81B8C00BCF21A /* CardView.xib */,
+				A415FED72015DC9F00983B38 /* Cells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A415FED72015DC9F00983B38 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A42C5B961FD2BE490063D265 /* WordTableCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		A415FED82015DCBA00983B38 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FA312F001FCBF37200D55F06 /* MainViewController.swift */,
+				A42C5B921FD2BDA90063D265 /* WordTableViewController.swift */,
+				A42C5B9C1FD2CD9A0063D265 /* AddWordViewController.swift */,
+				A42C5B9A1FD2C95B0063D265 /* HistoryWordViewController.swift */,
+				A42C5B981FD2C0B50063D265 /* FavoriteWordViewController.swift */,
+				A4BD85461FE5C026002C0DAE /* LoginViewController.swift */,
+				A4D32BF41FE90CC700CFC40B /* RegisterViewController.swift */,
+				A46FF8B31FF2BBDF009AB3F0 /* LogoutViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A415FED92015E78B00983B38 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A42C5B941FD2BE3A0063D265 /* WordModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A415FEDA2015E79A00983B38 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A47FD3032014C9FB005C17F1 /* Constants.swift */,
+				A415FEDC2015EF8900983B38 /* Functions.swift */,
+				A474E0481FF39DDE000205F6 /* UIExtensions.swift */,
+				A4DC2ECC1FDC174400317ED8 /* MutableCollections+Shuffle.swift */,
+				A45779A920187CFC00AEC98A /* Structures.swift */,
+				AEDDDC8B1FEA944900C692E7 /* Network */,
+				A415FEDB2015E7A400983B38 /* Dictionary */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		A415FEDB2015E7A400983B38 /* Dictionary */ = {
+			isa = PBXGroup;
+			children = (
+				FA023A0F1FDB1BF500FC7EDF /* Dictionary.swift */,
+				FA023A0D1FDB1BE400FC7EDF /* dictionary.json */,
+			);
+			path = Dictionary;
+			sourceTree = "<group>";
+		};
+		AEDDDC8B1FEA944900C692E7 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				AEB765F91FE9466C00BF91E1 /* NetworkManager.swift */,
+				AEDDDC8C1FEA94A300C692E7 /* NetworkUser.swift */,
+				AEDDDC8E1FEA94BC00C692E7 /* NetworkDelegate.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		DCE79CD57675F69FC76EC40F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28D4C52252BD884747FDD3C3 /* Pods_WordFlash.framework */,
+				7C0E1FD8633069262A49A21A /* Pods_WordFlashTests.framework */,
+				75C7F67F736BA7D5051F4960 /* Pods_WordFlashUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA312EF21FCBF37100D55F06 = {
+			isa = PBXGroup;
+			children = (
+				DCE79CD57675F69FC76EC40F /* Frameworks */,
+				8C16F6243610198A2AA25BA5 /* Pods */,
+				FA312EFC1FCBF37200D55F06 /* Products */,
+				FA312EFD1FCBF37200D55F06 /* WordFlash */,
+				FA312F121FCBF37200D55F06 /* WordFlashTests */,
+				FA312F1D1FCBF37200D55F06 /* WordFlashUITests */,
+			);
+			sourceTree = "<group>";
+		};
+		FA312EFC1FCBF37200D55F06 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA312EFB1FCBF37200D55F06 /* WordFlash.app */,
+				FA312F0F1FCBF37200D55F06 /* WordFlashTests.xctest */,
+				FA312F1A1FCBF37200D55F06 /* WordFlashUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA312EFD1FCBF37200D55F06 /* WordFlash */ = {
+			isa = PBXGroup;
+			children = (
+				A415FED92015E78B00983B38 /* Model */,
+				A415FED62015DC8B00983B38 /* View */,
+				A415FED82015DCBA00983B38 /* Controller */,
+				A415FEDA2015E79A00983B38 /* Helpers */,
+				FA312EFE1FCBF37200D55F06 /* AppDelegate.swift */,
+				FA312F051FCBF37200D55F06 /* Assets.xcassets */,
+				FA312F0A1FCBF37200D55F06 /* Info.plist */,
+			);
+			path = WordFlash;
+			sourceTree = "<group>";
+		};
+		FA312F121FCBF37200D55F06 /* WordFlashTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA312F131FCBF37200D55F06 /* WordFlashTests.swift */,
+				FA312F151FCBF37200D55F06 /* Info.plist */,
+			);
+			path = WordFlashTests;
+			sourceTree = "<group>";
+		};
+		FA312F1D1FCBF37200D55F06 /* WordFlashUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FA312F1E1FCBF37200D55F06 /* WordFlashUITests.swift */,
+				FA312F201FCBF37200D55F06 /* Info.plist */,
+			);
+			path = WordFlashUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA312EFA1FCBF37200D55F06 /* WordFlash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA312F231FCBF37200D55F06 /* Build configuration list for PBXNativeTarget "WordFlash" */;
+			buildPhases = (
+				BF7B8A17347AABD7E65BECC0 /* [CP] Check Pods Manifest.lock */,
+				FA312EF71FCBF37200D55F06 /* Sources */,
+				FA312EF81FCBF37200D55F06 /* Frameworks */,
+				FA312EF91FCBF37200D55F06 /* Resources */,
+				4AB8B97244A0AFDADF6B35F9 /* [CP] Embed Pods Frameworks */,
+				00AC5C26E374353BF98A7C60 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WordFlash;
+			productName = WordFlash;
+			productReference = FA312EFB1FCBF37200D55F06 /* WordFlash.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA312F0E1FCBF37200D55F06 /* WordFlashTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA312F261FCBF37200D55F06 /* Build configuration list for PBXNativeTarget "WordFlashTests" */;
+			buildPhases = (
+				66FA974F7534662229DA9B7F /* [CP] Check Pods Manifest.lock */,
+				FA312F0B1FCBF37200D55F06 /* Sources */,
+				FA312F0C1FCBF37200D55F06 /* Frameworks */,
+				FA312F0D1FCBF37200D55F06 /* Resources */,
+				9697FB15F8802F5EA663CD47 /* [CP] Embed Pods Frameworks */,
+				DADD1040574B00770D9A4B34 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA312F111FCBF37200D55F06 /* PBXTargetDependency */,
+			);
+			name = WordFlashTests;
+			productName = WordFlashTests;
+			productReference = FA312F0F1FCBF37200D55F06 /* WordFlashTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FA312F191FCBF37200D55F06 /* WordFlashUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA312F291FCBF37200D55F06 /* Build configuration list for PBXNativeTarget "WordFlashUITests" */;
+			buildPhases = (
+				41AF5E4598E407CE84CA8E2E /* [CP] Check Pods Manifest.lock */,
+				FA312F161FCBF37200D55F06 /* Sources */,
+				FA312F171FCBF37200D55F06 /* Frameworks */,
+				FA312F181FCBF37200D55F06 /* Resources */,
+				AEC6505AE1CD346D52398F1F /* [CP] Embed Pods Frameworks */,
+				A34DE4537758D1D5A539F79C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA312F1C1FCBF37200D55F06 /* PBXTargetDependency */,
+			);
+			name = WordFlashUITests;
+			productName = WordFlashUITests;
+			productReference = FA312F1A1FCBF37200D55F06 /* WordFlashUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA312EF31FCBF37100D55F06 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = Alexandr;
+				TargetAttributes = {
+					FA312EFA1FCBF37200D55F06 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					FA312F0E1FCBF37200D55F06 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FA312EFA1FCBF37200D55F06;
+					};
+					FA312F191FCBF37200D55F06 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FA312EFA1FCBF37200D55F06;
+					};
+				};
+			};
+			buildConfigurationList = FA312EF61FCBF37100D55F06 /* Build configuration list for PBXProject "WordFlash" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA312EF21FCBF37100D55F06;
+			productRefGroup = FA312EFC1FCBF37200D55F06 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA312EFA1FCBF37200D55F06 /* WordFlash */,
+				FA312F0E1FCBF37200D55F06 /* WordFlashTests */,
+				FA312F191FCBF37200D55F06 /* WordFlashUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA312EF91FCBF37200D55F06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA312F091FCBF37200D55F06 /* LaunchScreen.storyboard in Resources */,
+				FA023A0E1FDB1BE400FC7EDF /* dictionary.json in Resources */,
+				FA312F061FCBF37200D55F06 /* Assets.xcassets in Resources */,
+				AEB5E12B1FD81B8C00BCF21A /* CardView.xib in Resources */,
+				FA312F041FCBF37200D55F06 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA312F0D1FCBF37200D55F06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA312F181FCBF37200D55F06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00AC5C26E374353BF98A7C60 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WordFlash/Pods-WordFlash-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		41AF5E4598E407CE84CA8E2E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WordFlashUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4AB8B97244A0AFDADF6B35F9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WordFlash/Pods-WordFlash-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire-SwiftyJSON/Alamofire_SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
+				"${BUILT_PRODUCTS_DIR}/Koloda/Koloda.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/paper-onboarding/paper_onboarding.framework",
+				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire_SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Koloda.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/paper_onboarding.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WordFlash/Pods-WordFlash-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66FA974F7534662229DA9B7F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WordFlashTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9697FB15F8802F5EA663CD47 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WordFlashTests/Pods-WordFlashTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A34DE4537758D1D5A539F79C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WordFlashUITests/Pods-WordFlashUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AEC6505AE1CD346D52398F1F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WordFlashUITests/Pods-WordFlashUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF7B8A17347AABD7E65BECC0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WordFlash-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DADD1040574B00770D9A4B34 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WordFlashTests/Pods-WordFlashTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA312EF71FCBF37200D55F06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEDDDC8D1FEA94A300C692E7 /* NetworkUser.swift in Sources */,
+				A47FD3042014C9FB005C17F1 /* Constants.swift in Sources */,
+				A4BD85471FE5C026002C0DAE /* LoginViewController.swift in Sources */,
+				A415FEDD2015EF8900983B38 /* Functions.swift in Sources */,
+				FA312F011FCBF37200D55F06 /* MainViewController.swift in Sources */,
+				FA023A101FDB1BF500FC7EDF /* Dictionary.swift in Sources */,
+				A456B5B81FDAC44400421186 /* CardView.swift in Sources */,
+				A46FF8B41FF2BBDF009AB3F0 /* LogoutViewController.swift in Sources */,
+				AEDDDC8F1FEA94BC00C692E7 /* NetworkDelegate.swift in Sources */,
+				A42C5B971FD2BE490063D265 /* WordTableCell.swift in Sources */,
+				A45779AA20187CFC00AEC98A /* Structures.swift in Sources */,
+				A42C5B9D1FD2CD9A0063D265 /* AddWordViewController.swift in Sources */,
+				A42C5B991FD2C0B50063D265 /* FavoriteWordViewController.swift in Sources */,
+				A42C5B931FD2BDA90063D265 /* WordTableViewController.swift in Sources */,
+				A4DC2ECD1FDC174400317ED8 /* MutableCollections+Shuffle.swift in Sources */,
+				FA312EFF1FCBF37200D55F06 /* AppDelegate.swift in Sources */,
+				AEB765FA1FE9466C00BF91E1 /* NetworkManager.swift in Sources */,
+				A4D32BF51FE90CC700CFC40B /* RegisterViewController.swift in Sources */,
+				A42C5B9B1FD2C95B0063D265 /* HistoryWordViewController.swift in Sources */,
+				A42C5B951FD2BE3A0063D265 /* WordModel.swift in Sources */,
+				A474E0491FF39DDE000205F6 /* UIExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA312F0B1FCBF37200D55F06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA312F141FCBF37200D55F06 /* WordFlashTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA312F161FCBF37200D55F06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA312F1F1FCBF37200D55F06 /* WordFlashUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA312F111FCBF37200D55F06 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA312EFA1FCBF37200D55F06 /* WordFlash */;
+			targetProxy = FA312F101FCBF37200D55F06 /* PBXContainerItemProxy */;
+		};
+		FA312F1C1FCBF37200D55F06 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA312EFA1FCBF37200D55F06 /* WordFlash */;
+			targetProxy = FA312F1B1FCBF37200D55F06 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA312F021FCBF37200D55F06 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA312F031FCBF37200D55F06 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FA312F071FCBF37200D55F06 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA312F081FCBF37200D55F06 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA312F211FCBF37200D55F06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA312F221FCBF37200D55F06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA312F241FCBF37200D55F06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F74B4CF15969D4F09E3915E /* Pods-WordFlash.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9JH2U4SKKP;
+				INFOPLIST_FILE = WordFlash/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com..WordFlash;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA312F251FCBF37200D55F06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E858FDFAA37703008D6F4B34 /* Pods-WordFlash.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9JH2U4SKKP;
+				INFOPLIST_FILE = WordFlash/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com..WordFlash;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FA312F271FCBF37200D55F06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EEAA96989E2180876C987D7 /* Pods-WordFlashTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WordFlashTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com..WordFlashTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WordFlash.app/WordFlash";
+			};
+			name = Debug;
+		};
+		FA312F281FCBF37200D55F06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAA7F9985D9ECCA1E6F9D321 /* Pods-WordFlashTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WordFlashTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com..WordFlashTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WordFlash.app/WordFlash";
+			};
+			name = Release;
+		};
+		FA312F2A1FCBF37200D55F06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9B64CC5220BF914D4D043C9 /* Pods-WordFlashUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WordFlashUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com..WordFlashUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WordFlash;
+			};
+			name = Debug;
+		};
+		FA312F2B1FCBF37200D55F06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4990BCF66A46C2C5F7B5034 /* Pods-WordFlashUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WordFlashUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com..WordFlashUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WordFlash;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA312EF61FCBF37100D55F06 /* Build configuration list for PBXProject "WordFlash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA312F211FCBF37200D55F06 /* Debug */,
+				FA312F221FCBF37200D55F06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA312F231FCBF37200D55F06 /* Build configuration list for PBXNativeTarget "WordFlash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA312F241FCBF37200D55F06 /* Debug */,
+				FA312F251FCBF37200D55F06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA312F261FCBF37200D55F06 /* Build configuration list for PBXNativeTarget "WordFlashTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA312F271FCBF37200D55F06 /* Debug */,
+				FA312F281FCBF37200D55F06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA312F291FCBF37200D55F06 /* Build configuration list for PBXNativeTarget "WordFlashUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA312F2A1FCBF37200D55F06 /* Debug */,
+				FA312F2B1FCBF37200D55F06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA312EF31FCBF37100D55F06 /* Project object */;
+}

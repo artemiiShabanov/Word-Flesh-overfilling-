@@ -1,0 +1,6 @@
+framework module Pods_WordFlash {
+  umbrella header "Pods-WordFlash-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module Pods_WordFlashTests {
+  umbrella header "Pods-WordFlashTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
